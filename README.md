@@ -1,13 +1,14 @@
 # hello-world using string and time delays manipulation
 
 
-This Programme uses string and time manipulation to print the hello world
+# This Programme uses string and time manipulation to print the hello world
 
 
 
 
 
-
+import string
+import time
 
 text = 'Hello world'  # printable text
 temp = ''           # builds the string character by character
