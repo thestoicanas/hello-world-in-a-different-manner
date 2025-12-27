@@ -1,4 +1,4 @@
-# hello-world-in-a-different-manner
+# hello-world using string and time delays manipulation
 This Programme prints hello world but not as you think...
 
 
