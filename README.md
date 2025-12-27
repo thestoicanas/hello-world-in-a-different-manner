@@ -1,18 +1,30 @@
 # hello-world using string and time delays manipulation
 
 
-import string
-import time
-text = "Hello World" # go touch the grass
-temp = ''
-for ch in text:
-    for i in string.printable:
-        if i == ch or ch == "":
-            time.sleep(0.01)
-            print(temp+i)
-            temp +=ch
-            print(temp,) # end='\r')
-            break
+This Programme uses string and time manipulation to print the hello world
+
+
+
+
+
+
+
+text = 'Hello world'  # printable text
+temp = ''           # builds the string character by character
+
+for ch in text:     # Loop through each character in the target text
+    # random characters until hits the correct one
+    for i in string.printable:  # Try every printable character
+        if i == ch:             # If we found the correct character
+            temp += ch          # Add the correct character to temp
+            print(temp, end='\r') #or print(temp)   # Print the current string (overwrite line)
+            time.sleep(0.05)    # pauses after correct character
+            break               
         else:
-            time.sleep(0.02)
-            print(temp+i,) #end='\r')
+            # prints wrong programme
+            print(temp + i, end='\r') #or print (temp)
+            time.sleep(0.02)    # Fast flicker for wrong attempts
+
+# Final line breaks
+print()  # new line
+print("Final text:", text)
